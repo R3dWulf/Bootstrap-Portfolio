@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta lang="en-us" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css"></style>
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" class="col-md-12"  style="background-color: white">
+			<a id ="logo" class="navbar-brand" href="#">Travis Castle</a>
+			<div style="color: grey" class="header">
+				<ul class="nav navbar-nav navbar-right" style="margin: 0px">
+         			<button class="nav_buttons" style="margin-right: -1px" >	
+         				<li class="nav_about">
+         					<a href="index.html">
+         						About 
+         					</a>
+         				</li>
+         			</button>
+   					|
+        			<button class="nav_buttons" style="margin-right: -1px" >	
+        				<li class="nav_port">
+        					<a href="portfolio.html">Portfolio 
+        					</a>
+        				</li>
+        			</button>
+        			|
+         			<button class="nav_buttons" >	
+         				<li class="nav_contact">
+         					<a href="contact.html">
+         						Contact
+         					</a>
+         				</li>
+         			</button>
+       			</ul>
+       		</div>
+
+		</nav>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div id="main_content" class="col-md-8" class="clearfix" >
+					<h1 class="main_content_h1">Contact Me</h1>
+					<hr class="break">
+				<form method="POST" action="mailto:example@example.com" name="ContactForm" onsubmit="return validateContactForm()">
+						<label>First Name:</label>
+						<br>
+						<input type="text" name="First_Name" id="FirstName" placeholder="First Name" maxlength="20" required />
+						<br>
+						<br>
+						<label>Last Name:</label>
+						<br>
+						<input type="text" name="Last_Name" id="LastName" placeholder="Last Name" maxlength="20" required />
+						<br>
+						<br>
+						<label>Email:</label>
+						<br>
+						<input type="email" name="Email" id="Email" placeholder="Email Address" maxlength="30" required>
+						<br>
+						<br>
+						<label>Phone#:</label>
+						<br>						
+						<input type="tel" placeholder="Phone#"/>
+						Home
+						<input type="radio" name="Home" />
+						Work
+						<input type="radio" name="Work" />
+						Cell
+						<input type="radio" name="Cell" />
+						<br>
+						<br>
+						<label>Best Time to Call:</label> 
+						<select type="text" value="" name="select">
+							<option>
+								Morning
+							</option>
+							<option>
+								Evenings
+							</option>
+							<option>
+								Nights
+							</option>													
+						</select>	
+						Do Not Call 
+						<input type="checkbox" name="DoNotCall">
+
+						<br>
+						<br>
+						<label>Your Comments:</label>
+						<br>
+						<textarea id="message" name="Comments" placeholder="Your comment's here" maxlength="1000" required />
+						</textarea>
+						<br>
+						<br>								
+						<input id="button" type="submit" value="Submit" name="submit">
+					</form>
+				</div>
+
+				<div id="side_bar" class="col-md-3" ">
+					<p>
+						Contact Me	
+					</p>
+					<hr class="break">
+
+					<img src="assets\images\github.png" height="35px" width="35px"> 
+					<img src="assets\images\Linkin.png" height="35px" width="35px">
+					<img src="assets\images\Stack.png" height="35px" width="35px">
+				</div>
+			</div>
+
+		</div>
+	    <div id="footer"">
+			<div class="break">
+			</div>
+			<div class="col-md-12">
+				&#169; Copyright 2017 Travis Castle
+			</div>
+		</div>
+	</body>
+</html>
